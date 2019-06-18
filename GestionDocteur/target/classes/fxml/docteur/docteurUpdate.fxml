@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiDocteur.UpdateController">
+    <children>
+      <TextField fx:id="nom" layoutX="80.5" layoutY="45.0" promptText="Nom" />
+      <TextField fx:id="prenom" layoutX="268.0" layoutY="45.0" promptText="Prenom" />
+      <TextField fx:id="tel" layoutX="80.5" layoutY="96.0" promptText="Phone" />
+      <TextField fx:id="email" layoutX="268.0" layoutY="96.0" promptText="E-Mail" />
+      <PasswordField fx:id="password" layoutX="80.5" layoutY="145.0" promptText="Password" />
+      <PasswordField fx:id="confirm" layoutX="268.0" layoutY="145.0" promptText="confirm password" />
+      <Button layoutX="268.0" layoutY="279.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="149.0" text="Update" />
+      <TextArea fx:id="adress" layoutX="80.5" layoutY="201.0" prefHeight="43.0" prefWidth="335.0" promptText="Adress" />
+      <Label fx:id="confirmMsg" layoutX="333.0" layoutY="283.0" textFill="RED" />
+      <Button layoutX="81.0" layoutY="279.0" mnemonicParsing="false" onAction="#cancelUpdate" prefHeight="25.0" prefWidth="149.0" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiFiche.FicheListController">
+    <children>
+      <Line endX="175.0" layoutY="175.0" opacity="0.39" rotate="90.0" startX="-175.0" startY="-0.0" translateX="415.0" />
+      <TableView fx:id="tableauFiches" layoutX="9.0" layoutY="32.0" onMouseClicked="#mouseClick" prefHeight="186.0" prefWidth="396.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="29.0" text="ID" />
+          <TableColumn fx:id="dateFiche" prefWidth="98.0" text="Date" />
+            <TableColumn fx:id="taille" prefWidth="75.0" text="Taille" />
+            <TableColumn fx:id="poid" prefWidth="68.0" text="Poid" />
+            <TableColumn fx:id="type" prefWidth="124.0" text="Type" />
+        </columns>
+      </TableView>
+      <Button fx:id="addNew" layoutX="425.0" layoutY="126.0" mnemonicParsing="false" onAction="#addFiche" prefHeight="25.0" prefWidth="65.0" text="Add new" />
+      <Label layoutX="151.0" layoutY="2.0" opacity="0.61" text="List of fiches">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="200.0" layoutY="27.0" opacity="0.33" startX="-100.0" />
+      <Label fx:id="description" layoutX="100.0" layoutY="235.0" maxWidth="306.0" prefHeight="17.0" prefWidth="306.0" text="select fiche" wrapText="true" />
+      <Label layoutX="14.0" layoutY="235.0" text="Description : " />
+      <Button fx:id="updateObservation" layoutX="425.0" layoutY="163.0" mnemonicParsing="false" onAction="#updateByDoctor" prefHeight="25.0" prefWidth="65.0" text="Update" />
+      <Label fx:id="labelImc2" layoutX="14.0" layoutY="309.0" text="Imc : " />
+      <Label fx:id="labelImc" layoutX="100.0" layoutY="309.0" text="Label" />
+   </children>
+</AnchorPane>

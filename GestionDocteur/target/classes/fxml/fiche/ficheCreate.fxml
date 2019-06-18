@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="172.0" prefWidth="259.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="guiFiche.FicheCreateController">
+   <children>
+      <Button fx:id="addFiche" layoutX="104.0" layoutY="120.0" mnemonicParsing="false" onAction="#addFiche" text="Create" />
+      <TextField fx:id="taille" layoutX="55.0" layoutY="31.0" promptText="Taille" />
+      <TextField fx:id="poid" layoutX="56.0" layoutY="74.0" promptText="Poids" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+table fiche triggers:
+
+Trigger Before Insert:
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `gestiondocteur`.`fiches_BEFORE_INSERT` BEFORE INSERT ON `fiches` FOR EACH ROW
+BEGIN
+  SET NEW.imc = 10000*(NEW.poid / (NEW.taille * NEW.taille));
+  SET NEW.type = IF(NEW.imc < 18.5,"insuffisante",IF(NEW.imc < 25, "nomale",IF(NEW.imc< 29 , "pre-obese","obesite")));
+  SET NEW.dateFiche = NOW();
+END
+
+
+
+Trigger before update
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `gestiondocteur`.`fiches_BEFORE_UPDATE` BEFORE UPDATE ON `fiches` FOR EACH ROW
+BEGIN
+  SET NEW.imc = 10000*(NEW.poid / (NEW.taille * NEW.taille));
+  SET NEW.type = IF(NEW.imc < 18.5,"insuffisante",IF(NEW.imc < 25, "nomale",IF(NEW.imc< 29 , "pre-obese","obesite")));
+END

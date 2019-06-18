@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiLogin.LoginWindowController">
+    <children>
+      <ImageView fitHeight="200.0" fitWidth="320.0" layoutY="-1.0" opacity="0.21">
+         <image>
+            <Image url="@../images/loginBackground.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="loginBtn" layoutX="130.0" layoutY="125.0" onAction="#handleButtonAction" text="Connect" />
+      <PasswordField fx:id="password" layoutX="86.0" layoutY="88.0" promptText="password" />
+      <TextField fx:id="login" layoutX="86.0" layoutY="49.0" promptText="Email" />
+      <Label fx:id="msg" layoutX="69.0" layoutY="159.0" textFill="RED" />
+    </children>
+</AnchorPane>

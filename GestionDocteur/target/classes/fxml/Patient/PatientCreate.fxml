@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiPatient.PatientCreateController">
+    <children>
+      <TextField fx:id="nom" layoutX="80.5" layoutY="45.0" promptText="Nom" />
+      <TextField fx:id="prenom" layoutX="268.0" layoutY="45.0" promptText="Prenom" />
+      <TextField fx:id="tel" layoutX="80.5" layoutY="96.0" promptText="Phone" />
+      <TextField fx:id="email" layoutX="268.0" layoutY="96.0" promptText="E-Mail" />
+      <PasswordField fx:id="password" layoutX="81.0" layoutY="200.0" promptText="Password" />
+      <PasswordField fx:id="confirm" layoutX="268.0" layoutY="200.0" promptText="confirm password" />
+      <Button layoutX="268.0" layoutY="279.0" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="149.0" text="Register" />
+      <TextArea fx:id="adress" layoutX="268.0" layoutY="144.0" prefHeight="43.0" prefWidth="149.0" promptText="Adress" />
+      <Label fx:id="confirmMsg" alignment="CENTER" layoutX="221.0" layoutY="313.0" textAlignment="CENTER" textFill="RED" />
+      <Button layoutX="81.0" layoutY="279.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="149.0" text="Cancel" />
+      <DatePicker fx:id="birthDate" layoutX="81.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
